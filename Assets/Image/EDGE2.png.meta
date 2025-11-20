@@ -1,0 +1,715 @@
+fileFormatVersion: 2
+guid: f804f8423212ec942ab605761f2611a9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8372108185089001920
+    second: EDGE2_0
+  - first:
+      213: -8797582096442681103
+    second: EDGE2_1
+  - first:
+      213: 2546526968208922238
+    second: EDGE2_2
+  - first:
+      213: -5783949521023917117
+    second: EDGE2_3
+  - first:
+      213: -4614983271226121228
+    second: EDGE2_4
+  - first:
+      213: 940435513554255941
+    second: EDGE2_5
+  - first:
+      213: -4037780862776249596
+    second: EDGE2_6
+  - first:
+      213: 7949243946418368203
+    second: EDGE2_7
+  - first:
+      213: -3667182808135740201
+    second: EDGE2_8
+  - first:
+      213: -6795281501038450012
+    second: EDGE2_9
+  - first:
+      213: 4198729489353510642
+    second: EDGE2_10
+  - first:
+      213: 2472534005002548122
+    second: EDGE2_11
+  - first:
+      213: 1522915719293196310
+    second: EDGE2_12
+  - first:
+      213: 6882603883487216655
+    second: EDGE2_13
+  - first:
+      213: 6189343154339213658
+    second: EDGE2_14
+  - first:
+      213: -1445401985577572814
+    second: EDGE2_15
+  - first:
+      213: -4828748415569193750
+    second: EDGE2_16
+  - first:
+      213: -3196210347648129472
+    second: EDGE2_17
+  - first:
+      213: -4851610133873616069
+    second: EDGE2_18
+  - first:
+      213: 4158702234367271166
+    second: EDGE2_19
+  - first:
+      213: 7918933646631103033
+    second: EDGE2_20
+  - first:
+      213: 5934841746267400104
+    second: EDGE2_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: EDGE2_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 575
+        width: 42
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c9ce597904bf2470800000000000000
+      internalID: 8372108185089001920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EDGE2_1
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 511
+        width: 47
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f89233e1b5b8e580800000000000000
+      internalID: -8797582096442681103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EDGE2_2
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 511
+        width: 52
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e769b0719c4175320800000000000000
+      internalID: 2546526968208922238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EDGE2_3
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 514
+        width: 55
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c324982e884bbfa0800000000000000
+      internalID: -5783949521023917117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EDGE2_4
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 511
+        width: 51
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f362328a2944ffb0800000000000000
+      internalID: -4614983271226121228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EDGE2_5
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 511
+        width: 47
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 540409fed191d0d00800000000000000
+      internalID: 940435513554255941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EDGE2_6
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 451
+        width: 51
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 403f959c2bbe6f7c0800000000000000
+      internalID: -4037780862776249596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EDGE2_7
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 459
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcee03b9043615e60800000000000000
+      internalID: 7949243946418368203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EDGE2_8
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 450
+        width: 54
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d456a26aac8b1dc0800000000000000
+      internalID: -3667182808135740201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EDGE2_9
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 383
+        width: 42
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4aae1dd4a7f42b1a0800000000000000
+      internalID: -6795281501038450012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EDGE2_10
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 383
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fe8fd88932e44a30800000000000000
+      internalID: 4198729489353510642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EDGE2_11
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 383
+        width: 48
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a933047d394305220800000000000000
+      internalID: 2472534005002548122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EDGE2_12
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 322
+        width: 57
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 618545727cb722510800000000000000
+      internalID: 1522915719293196310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EDGE2_13
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 323
+        width: 56
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f04caf434cbe38f50800000000000000
+      internalID: 6882603883487216655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EDGE2_14
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 319
+        width: 49
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a51726b6ec6f4e550800000000000000
+      internalID: 6189343154339213658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EDGE2_15
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 259
+        width: 51
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 236210c5d86e0fbe0800000000000000
+      internalID: -1445401985577572814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EDGE2_16
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 259
+        width: 55
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae4944c56e6dcfcb0800000000000000
+      internalID: -4828748415569193750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EDGE2_17
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 259
+        width: 54
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04661018f97c4a3d0800000000000000
+      internalID: -3196210347648129472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EDGE2_18
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 194
+        width: 57
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3b17c5c94e9bacb0800000000000000
+      internalID: -4851610133873616069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EDGE2_19
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 195
+        width: 56
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef0a51ef5ada6b930800000000000000
+      internalID: 4158702234367271166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EDGE2_20
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 194
+        width: 53
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93ae55ff134b5ed60800000000000000
+      internalID: 7918933646631103033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EDGE2_21
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 127
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a76d64cf1bcc5250800000000000000
+      internalID: 5934841746267400104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      EDGE2_0: 8372108185089001920
+      EDGE2_1: -8797582096442681103
+      EDGE2_10: 4198729489353510642
+      EDGE2_11: 2472534005002548122
+      EDGE2_12: 1522915719293196310
+      EDGE2_13: 6882603883487216655
+      EDGE2_14: 6189343154339213658
+      EDGE2_15: -1445401985577572814
+      EDGE2_16: -4828748415569193750
+      EDGE2_17: -3196210347648129472
+      EDGE2_18: -4851610133873616069
+      EDGE2_19: 4158702234367271166
+      EDGE2_2: 2546526968208922238
+      EDGE2_20: 7918933646631103033
+      EDGE2_21: 5934841746267400104
+      EDGE2_3: -5783949521023917117
+      EDGE2_4: -4614983271226121228
+      EDGE2_5: 940435513554255941
+      EDGE2_6: -4037780862776249596
+      EDGE2_7: 7949243946418368203
+      EDGE2_8: -3667182808135740201
+      EDGE2_9: -6795281501038450012
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
