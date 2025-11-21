@@ -53,6 +53,7 @@ public class Player : MonoBehaviour
     private float offsetX;
     void Start()
     {
+        ui = FindObjectOfType<UI>();
         camera = FindObjectOfType<Camera>();
         sr = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
