@@ -169,7 +169,6 @@ public class Player : MonoBehaviour
             if (!Hit && !bullet.heart)
             {
                 //敵の攻撃に当たったら
-                Destroy(collision.gameObject);
                 anim.Play("Hit");
                 Damage();
                 rb.linearVelocity = new Vector2(-8 * bullet.Vec, 8);
@@ -267,7 +266,7 @@ public class Player : MonoBehaviour
         Instantiate(DeathObj, transform.position, Quaternion.identity); //死亡オブジェクトを出す
         Instantiate(DeathEffe,transform.position, Quaternion.identity); //死亡エフェクトを出す
         gameObject.SetActive(false); //プレイヤーを非表示
-        StartCoroutine(ui.BlackOut2()); //暗転処理
+        
 ;        yield return null;
     }
 

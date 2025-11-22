@@ -14,6 +14,9 @@ public class UI : MonoBehaviour
     [SerializeField]
     private Image BlackImage; //暗転用
 
+    private bool GameOver = false; //ゲームオーバー判定
+
+    public float Score = 0; //スコア
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -29,6 +32,9 @@ public class UI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        
+
         //残りHp表示
         for (int i = 0; i < Hearts.Count; i++)
         {
@@ -36,6 +42,12 @@ public class UI : MonoBehaviour
                 Hearts[i].gameObject.SetActive(true);
             else
                 Hearts[i].gameObject.SetActive(false);
+        }
+
+        if(player.gameObject.activeSelf == false && !GameOver)
+        {
+            GameOver = true;
+            StartCoroutine(BlackOut2()); //暗転処理
         }
     }
 
@@ -58,7 +70,8 @@ public class UI : MonoBehaviour
     /// <returns></returns>
     public IEnumerator BlackOut2()
     {
-        while (BlackImage.color.a < 1)
+        yield return new WaitForSeconds(1.0f);
+        while (BlackImage.color.a < 1.0f)
         {
             BlackImage.color += new Color(0, 0, 0, 1 * Time.deltaTime / 2);
             yield return null;

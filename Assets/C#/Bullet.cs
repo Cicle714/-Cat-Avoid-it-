@@ -49,5 +49,6 @@ public class Bullet : MonoBehaviour
         {
             transform.position += Vector3.left * MoveSpeed * Vec * Time.deltaTime;
         }
+           
     }
 }
