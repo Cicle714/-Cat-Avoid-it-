@@ -16,7 +16,6 @@ public class UI : MonoBehaviour
 
     private bool GameOver = false; //ゲームオーバー判定
 
-    public float Score = 0; //スコア
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -76,6 +75,8 @@ public class UI : MonoBehaviour
             BlackImage.color += new Color(0, 0, 0, 1 * Time.deltaTime / 2);
             yield return null;
         }
+        
+        yield return StartCoroutine(FindObjectOfType<ScoreManager>().ScoreDisplay());
         SceneManager.LoadScene("Title");
         yield return null;
     }
