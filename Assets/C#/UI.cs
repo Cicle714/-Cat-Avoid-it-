@@ -32,7 +32,7 @@ public class UI : MonoBehaviour
     void Update()
     {
 
-        
+
 
         //Žc‚èHp•\Ž¦
         for (int i = 0; i < Hearts.Count; i++)
@@ -43,7 +43,7 @@ public class UI : MonoBehaviour
                 Hearts[i].gameObject.SetActive(false);
         }
 
-        if(player.gameObject.activeSelf == false && !GameOver)
+        if (player.gameObject.activeSelf == false && !GameOver)
         {
             GameOver = true;
             StartCoroutine(BlackOut2()); //ˆÃ“]ˆ—
@@ -75,7 +75,7 @@ public class UI : MonoBehaviour
             BlackImage.color += new Color(0, 0, 0, 1 * Time.deltaTime / 2);
             yield return null;
         }
-        
+
         yield return StartCoroutine(FindObjectOfType<ScoreManager>().ScoreDisplay());
         SceneManager.LoadScene("Title");
         yield return null;

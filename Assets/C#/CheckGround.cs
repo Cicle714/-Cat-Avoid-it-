@@ -13,6 +13,7 @@ public class CheckGround : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
+        //‘«‚Ì•”•ª‚ª’n–Ê‚ÉG‚ê‚½‚ç
         if (collision.gameObject.layer == LayerMask.NameToLayer("Ground"))
         {
             player.checkGround();

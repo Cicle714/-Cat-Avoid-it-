@@ -7,15 +7,15 @@ public class EnemyManager : MonoBehaviour
     List<Enemy> enemys;
 
     [SerializeField]
-    private float AttackInterval;
-    private float GameSpeed = 1;
+    private float AttackInterval; //攻撃の感覚
+    private float GameSpeed = 1; //攻撃スピードの倍率
 
     [SerializeField]
-    private float AttackCount;
+    private float AttackCount; //攻撃のカウント
 
-    private int HeartCount;
+    private int HeartCount; //ハートのカウント
     [SerializeField]
-    private int HeartInterval;
+    private int HeartInterval; //ハートが出る感覚
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -27,19 +27,21 @@ public class EnemyManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(AttackCount < 0)
+        if (AttackCount < 0)
         {
             HeartCount--;
-            int ran = Random.Range(0,enemys.Count);
-            enemys[ran].Attack = true;
+            int ran = Random.Range(0, enemys.Count);　//エネミーがランダムに選ばれ攻撃する
+            enemys[ran].Attack = true; //エネミーの攻撃をtrueにする
+
+            //ハートのカウントが0になったら、弾ではなく回復アイテムを出す
             if (HeartCount <= 0)
             {
                 enemys[ran].heart = true;
-                HeartCount = HeartInterval;
+                HeartCount = HeartInterval; //カウントのリセット
             }
-            AttackCount = AttackInterval;
+            AttackCount = AttackInterval; //カウントのリセット
         }
         AttackCount -= Time.deltaTime * GameSpeed;
-        GameSpeed += Time.deltaTime / 20; 
+        GameSpeed += Time.deltaTime / 20;
     }
 }

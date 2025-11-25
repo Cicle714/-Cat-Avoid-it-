@@ -1,8 +1,5 @@
 using System.Collections;
-using System.Collections.Generic;
-using UnityEditorInternal;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
@@ -47,7 +44,7 @@ public class Player : MonoBehaviour
     private UI ui; //UI取得
     private Camera camera; //カメラ取得
     private SpriteRenderer sr; //プレイヤーの画像
-    private Animator anim; 
+    private Animator anim;
     private Rigidbody2D rb;
     private BoxCollider2D col;
     private float offsetX;
@@ -67,7 +64,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
         walk = false; //移動操作の有無
         Dash = false; //ダッシュの有無
 
@@ -75,7 +72,7 @@ public class Player : MonoBehaviour
         if (Hit)
         {
             if (knockbackCount > 0)
-            {   
+            {
                 knockbackCount -= Time.deltaTime; //ノックバックのカウント
                 return;
             }
@@ -84,18 +81,19 @@ public class Player : MonoBehaviour
                 knockback = false; //ノックバック終わり
                 anim.Play("Idle"); //アニメーションをアイドル
             }
-            if(InvisibleInterbalCount < 0)
+            if (InvisibleInterbalCount < 0)
             {
                 InvisibleInterbalCount = InvisibleInterbal; //点滅のカウントのリセット
                 //点滅処理
-                if(sr.color.a != 0)
+                if (sr.color.a != 0)
                     sr.color = new Color(sr.color.r, sr.color.g, sr.color.b, 0);
                 else
                     sr.color = new Color(sr.color.r, sr.color.g, sr.color.b, 1);
-            }else
+            }
+            else
                 InvisibleInterbalCount -= Time.deltaTime; //点滅のカウント
 
-                InvisibleCount -= Time.deltaTime; //点滅時間のカウント
+            InvisibleCount -= Time.deltaTime; //点滅時間のカウント
 
             if (InvisibleCount < 0)
             {
@@ -114,13 +112,13 @@ public class Player : MonoBehaviour
         }
 
         //移動処理
-        if (Input.GetKey(KeyCode.D) && !(Input.GetKey(KeyCode.A)))
+        if ((Input.GetKey(KeyCode.D)|| Input.GetKey(KeyCode.RightArrow))&& !(Input.GetKey(KeyCode.A) ||Input.GetKey(KeyCode.LeftArrow)))
         {
             sr.flipX = false;
             walk = true;
             rb.linearVelocityX = MoveSpeed;
         }
-        if (Input.GetKey(KeyCode.A) && !(Input.GetKey(KeyCode.D)))
+        if ((Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) && !(Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)))
         {
             sr.flipX = true;
             walk = true;
@@ -136,15 +134,15 @@ public class Player : MonoBehaviour
             isGround = false;
             anim.Play("Jump");
         }
-        
+
         //ジャンプ後、落ちている時の処理
-        if(Jump && rb.linearVelocityY < 0)
+        if (Jump && rb.linearVelocityY < 0)
         {
             fall = true;
         }
         //アニメーションの処理
         anim.SetBool("Walk", walk);
-        anim.SetBool("Dash",Dash);
+        anim.SetBool("Dash", Dash);
         anim.SetBool("Down", fall);
 
         //向きによる当たり判定の反転
@@ -173,12 +171,12 @@ public class Player : MonoBehaviour
                 Damage();
                 rb.linearVelocity = new Vector2(-8 * bullet.Vec, 8);
             }
-            else if(bullet.heart)
+            else if (bullet.heart)
             {
                 //回復アイテムに当たったら
                 Destroy(collision.gameObject);
                 Hp++;
-                if(Hp > MaxHp)
+                if (Hp > MaxHp)
                     Hp = MaxHp;
             }
         }
@@ -196,7 +194,7 @@ public class Player : MonoBehaviour
                 Vec = -1;
             else
                 Vec = 1;
-                rb.linearVelocity = new Vector2(-8 * Vec, 8);
+            rb.linearVelocity = new Vector2(-8 * Vec, 8);
         }
 
     }
@@ -206,9 +204,9 @@ public class Player : MonoBehaviour
     /// </summary>
     void Damage()
     {
-        
+
         Hp--;
-        if(Hp <= 0)
+        if (Hp <= 0)
             StartCoroutine(Death());
         anim.Play("Hit");
         Hit = true;
@@ -236,7 +234,7 @@ public class Player : MonoBehaviour
     {
         Time.timeScale = 0;
         Vector3 StartPos = camera.transform.position;　//移動前の最初の位置
-        Vector3 Target = new Vector3(transform.position.x,transform.position.y,camera.transform.position.z);//移動場所のターゲット
+        Vector3 Target = new Vector3(transform.position.x, transform.position.y, camera.transform.position.z);//移動場所のターゲット
         float currentTime = 0; //移動するときのカウント
         float step = 1; //step秒後に移動完了
         float cameraZoom = 3.5f; //カメラのZoom距離
@@ -246,28 +244,28 @@ public class Player : MonoBehaviour
         while (currentTime < step)
         {
             inertia += Time.unscaledDeltaTime;
-           
+
             camera.orthographicSize = cameraSize - ((inertia * inertia) * cameraZoom);
             currentTime = inertia * inertia;
-            
-            camera.transform.position = Vector3.Lerp(StartPos, Target, currentTime /step);
-           yield return null;
+
+            camera.transform.position = Vector3.Lerp(StartPos, Target, currentTime / step);
+            yield return null;
         }
 
         //移動後に一時停止処理
         float DelayCount = 0;
         float DelayTime = 1f;　//DelayTime秒待つ
-        while(DelayCount < DelayTime)
+        while (DelayCount < DelayTime)
         {
             DelayCount += Time.unscaledDeltaTime;
             yield return null;
         }
         Time.timeScale = 1f;
         Instantiate(DeathObj, transform.position, Quaternion.identity); //死亡オブジェクトを出す
-        Instantiate(DeathEffe,transform.position, Quaternion.identity); //死亡エフェクトを出す
+        Instantiate(DeathEffe, transform.position, Quaternion.identity); //死亡エフェクトを出す
         gameObject.SetActive(false); //プレイヤーを非表示
-        
-;        yield return null;
+
+        ; yield return null;
     }
 
 
